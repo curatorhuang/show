@@ -1,0 +1,1 @@
+student包：用于进行xissue翻译多文件的例子，提示词为“帮我把项目中student包下的所有文件翻译成python，要求结果可执行”
