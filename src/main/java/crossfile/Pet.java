@@ -1,6 +1,7 @@
 package crossfile;
 
 public class Pet {
+    // 冲突测试
     private  String name;
     private  int age;
     private  String type;
