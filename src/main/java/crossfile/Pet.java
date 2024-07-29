@@ -1,6 +1,7 @@
 package crossfile;
 
 public class Pet {
+    // 1. Create a class called Pet
     private  String name;
     private  int age;
     private  String type;
