@@ -2,6 +2,7 @@ package crossfile;
 
 public class Pet {
     // 这个一个测试文档123
+    //这里加了一个注释
     private  String name;
     private  int age;
     private  String type;
