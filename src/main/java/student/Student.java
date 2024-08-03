@@ -11,7 +11,7 @@ public class Student {
         this.age = age;
     }
 
-    // Getter和Setter方法
+    // Getter和Setter方法。
     public String getName() {
         return name;
     }
