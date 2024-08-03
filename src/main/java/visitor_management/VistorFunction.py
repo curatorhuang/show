@@ -5,6 +5,7 @@ app = Flask(__name__)
 # 模拟数据库
 users = {}
 
+
 # 获取用户信息
 @app.route('/users/<user_id>', methods=['GET'])
 def get_user(user_id):
@@ -12,6 +13,7 @@ def get_user(user_id):
     if not user:
         abort(404, description="User not found")
     return jsonify(user)
+
 
 # 创建用户
 @app.route('/users', methods=['POST'])
@@ -34,22 +36,27 @@ def create_user():
     users[user_id] = user
     return jsonify(user), 201
 
+
 # 错误处理
 @app.errorhandler(404)
 def not_found(error):
     return jsonify({"error": "Not found", "message": error.description}), 404
 
+
 @app.errorhandler(400)
 def bad_request(error):
     return jsonify({"error": "Bad request", "message": error.description}), 400
+
 
 @app.errorhandler(401)
 def unauthorized(error):
     return jsonify({"error": "Unauthorized", "message": error.description}), 401
 
+
 @app.errorhandler(409)
 def conflict(error):
     return jsonify({"error": "Conflict", "message": error.description}), 409
+
 
 if __name__ == '__main__':
     app.run(debug=True)
