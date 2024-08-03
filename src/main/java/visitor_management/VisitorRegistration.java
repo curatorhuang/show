@@ -24,4 +24,13 @@ public class VisitorRegistration {
         database.addVisitor(visitor);
         System.out.println("Visitor " + name + " registered successfully.");
     }
+
+    /**
+     * 显示所有访客信息
+     */
+    public void showAllVisitors() {
+        System.out.println("All registered visitors:");
+        for (Visitor visitor : database.getAllVisitors()) {
+        }
+    }
 }
