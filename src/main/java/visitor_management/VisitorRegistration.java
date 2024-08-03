@@ -1,7 +1,7 @@
 package visitor_management;
 
 /**
- * 访客登记类，用于处理访客登记逻辑
+ * 访客登记类，用于处理访客登记逻辑。
  */
 public class VisitorRegistration {
     private VisitorDatabase database;
